@@ -7,7 +7,7 @@ class GraphNode():
         self.name = node
 
 
-instructions = ["A N B", "B NE C", "C E A"]
+instructions = ["A NW B", "C N B", "A N B", "C SW B"]
 nodes = {}
 
 
@@ -45,9 +45,8 @@ def check_direction(node, dir, start_node):
 #         return True
 
 
-def main():
+def main(debug):
     for line in instructions:
-        # line = "A N B"
         line = line.split(' ')
         node_1 = line[0]
         node_2 = line[2]
@@ -56,10 +55,19 @@ def main():
             nodes[node_1] = GraphNode(node_1)
         if node_2 not in nodes:
             nodes[node_2] = GraphNode(node_2)
+        # bool = node_2 in nodes[node_1].E or node_1 in nodes[node_2].E or node_2 in nodes[node_1].N or node_1 in nodes[node_2].N or node_2 in nodes[node_1].S or node_1 in nodes[node_2].S or node_2 in nodes[node_1].W or node_1 in nodes[node_2].W
+        bool = False
+        if bool:
+            print('FALSE')
+            return
         for loc in location:
-            getattr(nodes[node_2], loc).append(node_1)
+            list_1 = getattr(nodes[node_2], loc)
             loc_inv = toggle_loc(loc)
-            getattr(nodes[node_1], loc_inv).append(node_2)
+            list_2 = getattr(nodes[node_1], loc_inv)
+            if loc not in list_1:
+                getattr(nodes[node_2], loc).append(node_1)
+            if loc not in list_2:
+                getattr(nodes[node_1], loc_inv).append(node_2)
 
     for node in nodes:
         start = nodes[node].name
@@ -79,22 +87,19 @@ def main():
         #     for nd in E_list:
         #         name = node
         #         node = nodes[node]
-
-
-
-
-
-    for nd in nodes:
-        name = nodes[nd].name
-        N = nodes[nd].N
-        E = nodes[nd].E
-        S = nodes[nd].S
-        W = nodes[nd].W
-        print(name)
-        print('N: ' + str(N))
-        print('E: ' + str(E))
-        print('S: ' + str(S))
-        print('W: ' + str(W))
+    print('NOT FALSE')
+    if debug:
+        for nd in nodes:
+            name = nodes[nd].name
+            N = nodes[nd].N
+            E = nodes[nd].E
+            S = nodes[nd].S
+            W = nodes[nd].W
+            print(name)
+            print('N: ' + str(N))
+            print('E: ' + str(E))
+            print('S: ' + str(S))
+            print('W: ' + str(W))
 
     
 
@@ -104,5 +109,5 @@ def main():
 
 
 if __name__=="__main__":
-    main()
-    print('TRUE')
+    debug = False
+    main(debug)
