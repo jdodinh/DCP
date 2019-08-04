@@ -64,21 +64,18 @@ def main():
         for j in range(len(curr_array[i])):     # Adding exchange rates of neighboring nodes
             if j != i:
                 node.neighbors[curr[j]] = curr_array[i][j]
-    if debug is False:
-        for i in range(2, len(curr)):
-            arr = permutations(curr[1:], i)     # Getting all permutations of currencies starting at given value
-            for el in arr:                      # Calculating end value for a given permutation of exchanges
-                new_curr = list(el)
-                new_curr = ["USD"] + new_curr
-                extr.append([el, cycle_val(new_curr)])  # Calling the function that determines value
-    else:
-        new_curr = ['USD', 'CAD', 'GBP', 'AUD', 'JPY', 'CHF', 'EUR']
-        extr = cycle_val(new_curr)
+    for i in range(2, len(curr)):
+        arr = permutations(curr[1:], i)     # Getting all permutations of currencies starting at given value
+        for el in arr:                      # Calculating end value for a given permutation of exchanges
+            new_curr = list(el)
+            new_curr = ["USD"] + new_curr
+            extr.append([el, cycle_val(new_curr)])  # Calling the function that determines value
 
-    df = pd.DataFrame(extr, columns=["cycle", "val"])
+    df = pd.DataFrame(extr, columns=["cycle", "val"])   # Creating dataframe
     df = df.sort_values(by="val", ascending=False)
     df.to_csv("./currency_csv.csv")
     print(df.values)                            # Printing values
+
 
 if __name__=="__main__":
     main()
