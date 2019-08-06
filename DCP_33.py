@@ -17,23 +17,21 @@ For example, given the sequence [2, 1, 5, 7, 2, 0, 5], your algorithm should pri
 """
 
 
-og_list = [2, 1, 5, 7, 2, 0, 5]
+og_list = [2, 1, 5, 7, 2, 0, 5]                                 # example list
 
 
-def median(lst):
+def median(lst):                                                # function that finds median of a given list.
     length = len(lst)
     lst.sort()
-    if length % 2 == 0:
-        return (lst[int(length/2)] + lst[int(length/2) - 1])/2
+    if length % 2 == 0:                                 
+        return (lst[int(length/2)] + lst[int(length/2) - 1])/2  # return average of middle two elements, is list length is even
     else:
-        return lst[int(length/2)]
+        return lst[int(length/2)]                               # return middle element is list length is odd
 
 
 def main():
-    # median_list = []
-    for i in range(1, len(og_list)+1):
-        print(median(og_list[:i]))
-    # print(median_list)
+    for i in range(1, len(og_list)+1):                          # print out the medians of the slices of the original list, as the
+        print(median(og_list[:i]))                              # length increases
 
 
 if __name__ == "__main__":
