@@ -12,7 +12,8 @@ You may also use a list or array to represent a set.
 def find_power_set(lst):
     new_set = []
     if len(lst) == 1:
-        return [lst]                            # If list length is 1, we return the list in a list
+        new_set.append(lst)                     # If list length is 1, we return the list in a list
+        return new_set                              
     for i in range(len(lst)):                   # for all elements in that list, we find powersets of
         lst_cpy = lst.copy()                    # the list with the element removed, and then add it
         el = lst[i]                             # to the powerset, along with each element combined with
