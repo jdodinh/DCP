@@ -9,7 +9,7 @@ diagonal.
 # such that they don't threaten each other. Each node also has a level attribute signifying its depth. As soon as a
 # level N node is reached, we know that using this path it's possible to place 9 queens, as there are 9 nodes on the
 # path from the root to that particular node.
-# Finally the function create children, creates an array of TreeNode objects corresponding to that particular node, such
+# Finally the function create_children, creates an array of TreeNode objects corresponding to that particular node, such
 # that the options include only the fields on which a queen can be placed.
 # Back tracking is implemented with the use of a stack, where only the latest visited nodes, with non empty options can
 # exist
@@ -57,7 +57,6 @@ def array_filter(arr: list, coord: tuple):
 
 def main():
     boxes_master = []
-    start = []
     count = 0
     N = 11
     for j in range(N):

@@ -27,8 +27,10 @@ class TreeNode():                                   # TreeNode classs
 
     def create_children(self):
         for co in self.options:
-            opt = self.options.copy()
-            opt.remove(co)
+            opt = []
+            for el in self.options:
+                opt.append((el[0], el[1]+1))
+            # opt.remove(co)
             self.children.append(TreeNode(self.level+1, array_filter(opt, co), co))
 
 
@@ -46,11 +48,10 @@ def array_filter(arr: list, coord: tuple):
 
 def main():
     count = 0
-    N = 3
+    N = 4
     boxes = []
     for i in range(N):
-        for j in range(N):
-            boxes.append((i, j))
+        boxes.append((i, 0))
     root = TreeNode(0, boxes, None)
     root.create_children()
     queue = root.children.copy()
@@ -62,7 +63,7 @@ def main():
         node.create_children()
         queue = queue + node.children
 
-    print(count/math.factorial(N))
+    print(count)
 
 
 if __name__ == "__main__":

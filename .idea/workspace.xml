@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6c0c40e-658b-491e-b00c-673c8baf51a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/DCP_32.py" beforeDir="false" afterPath="$PROJECT_DIR$/DCP_32.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completed/DCP_38.py" beforeDir="false" afterPath="$PROJECT_DIR$/completed/DCP_38.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/in_progress/IP_DCP_38.py" beforeDir="false" afterPath="$PROJECT_DIR$/in_progress/IP_DCP_38.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,25 +15,9 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DCP_32.py">
+        <entry file="file://$USER_HOME$/Documents/My Documents/work/approximations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="10" lean-forward="true" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sqrt_smooth.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-251">
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
+            <state relative-caret-position="-7422" />
           </provider>
         </entry>
       </file>
@@ -47,6 +33,8 @@
         <option value="$PROJECT_DIR$/DCP_23.py" />
         <option value="$PROJECT_DIR$/DCP_24.py" />
         <option value="$PROJECT_DIR$/DCP_32.py" />
+        <option value="$PROJECT_DIR$/in_progress/IP_DCP_38.py" />
+        <option value="$PROJECT_DIR$/completed/DCP_38.py" />
       </list>
     </option>
   </component>
@@ -78,6 +66,11 @@
               <item name="DCP" type="b2602c69:ProjectViewProjectNode" />
               <item name="DCP" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="DCP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DCP" type="462c0819:PsiDirectoryNode" />
+              <item name="completed" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -85,6 +78,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -99,7 +93,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.DCP_32">
+  <component name="RunManager" selected="Python.IP_DCP_38">
     <configuration name="DCP_32" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DCP" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -142,6 +136,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="IP_DCP_38" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DCP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/in_progress" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/in_progress/IP_DCP_38.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="pip._vendor.packaging.__about__" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="DCP" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -164,12 +179,14 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.pip._vendor.packaging.__about__" />
-      <item itemvalue="Python.DCP_extra1" />
       <item itemvalue="Python.DCP_32" />
+      <item itemvalue="Python.DCP_extra1" />
+      <item itemvalue="Python.IP_DCP_38" />
+      <item itemvalue="Python.pip._vendor.packaging.__about__" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.IP_DCP_38" />
         <item itemvalue="Python.DCP_32" />
         <item itemvalue="Python.DCP_extra1" />
       </list>
@@ -233,22 +250,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" weight="0.32891566" />
-      <window_info anchor="bottom" id="Python Console" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32891566" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.4361446" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4759036" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.09638554" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -271,20 +287,22 @@
     <MESSAGE value="added question in header" />
     <option name="LAST_COMMIT_MESSAGE" value="added question in header" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/in_progress/IP_DCP_38.py</url>
+          <line>56</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="309" selection-start-line="309" selection-end-line="309" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sqrt_smooth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-251">
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -295,35 +313,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DCP_24.py">
+    <entry file="file://$PROJECT_DIR$/DCP_24.py" />
+    <entry file="file://$PROJECT_DIR$/DCP_23.py" />
+    <entry file="file://$PROJECT_DIR$/DCP_extra1.py" />
+    <entry file="file://$PROJECT_DIR$/DCP_32.py" />
+    <entry file="file://$PROJECT_DIR$/sqrt_smooth.py" />
+    <entry file="file://$PROJECT_DIR$/in_progress/IP_DCP_38.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        <state relative-caret-position="90">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DCP_23.py">
+    <entry file="file://$PROJECT_DIR$/completed/DCP_38.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        <state relative-caret-position="1035">
+          <caret line="69" column="35" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DCP_extra1.py">
+    <entry file="file://$USER_HOME$/Documents/My Documents/work/approximations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DCP_32.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="10" lean-forward="true" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-7422" />
       </provider>
     </entry>
   </component>
