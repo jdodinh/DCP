@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/Jeremi/Dropbox/perso/11 - GitHub/DCP/env_dcp"
+set -gx VIRTUAL_ENV "/Users/jdodinh/Dropbox/perso/11 - GitHub/DCP/env_dcp"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
